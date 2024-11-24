@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(14, 164, 134, 0.2) 0%, rgba(14, 164, 134, 0.4) 25%, rgba(14, 164, 134, 0.6) 50%, rgba(14, 164, 134, 0.8) 75%, rgba(14, 164, 134, 1) 100%), 
+    url(https://media.istockphoto.com/id/1963073686/photo/barber-cutting-mature-man-customer-hairs-at-barber-shop.jpg?s=612x612&w=0&k=20&c=IcJy1DYk3NoP-TfFa1QknZgV1RmgprcgQHEnBG65OEo=) 
+    no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(51, 51, 51, 0);
+    padding: 1.5rem;
+}
+
+.logo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    font-size: 2rem;
+    position: absolute;
+    left: 8rem;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.navbar > .about-us {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 18px;
+    background-color: rgb(20, 168, 139);
+    padding: 1rem;
+    border-radius: 3px;
+    color: whitesmoke;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.container {
+    position: relative;
+    top: 30%;
+    text-align: center;
+    padding: 20px;
+}
+
+.container h1 {
+    font-family: "Engagement", cursive;
+    font-weight: 600;
+    font-size: 6rem;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.container span {
+    margin-right: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    background-color: whitesmoke;
+    color: #333;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.container span:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: whitesmoke;
+}

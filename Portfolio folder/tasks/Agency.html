@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('images/background image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            color: white;
+        }
+
+        /* Blur effect on left corner */
+        .blur-effect {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px; /* Adjust width to cover the desired area */
+            height: 100vh; /* Full height of the page */
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent);
+            filter: blur(15px); /* Adjust blur strength */
+            pointer-events: none; /* Ensures it doesn’t interfere with clicks */
+        }
+
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em 2em;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+            padding: 0.5em 1em;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
+            border-radius: 8px;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            gap: 1.5em;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 600px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            font-weight: bold;
+            color: white;
+        }
+
+        .hero-content h1 span {
+            color: yellow;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            margin: 1em 0;
+        }
+
+        .register-btn {
+            padding: 1em 2em;
+            font-size: 1em;
+            background-color: transparent;
+            color: yellow;
+            border: 2px solid yellow;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .register-btn:hover {
+            background-color: yellow;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <!-- Left corner blur effect -->
+        <div class="blur-effect"></div>
+
+        <nav class="navbar">
+            <div class="logo"> 
+                <i class="fas fa-rocket"></i> 
+                Agency
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Affiliated</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Make Website <span>Now</span></h1>
+            <p>Making a website is now one of the easiest things. You just need to learn HTML, CSS, JavaScript, and you’re good to go.</p>
+            <button class="register-btn">Register Now To Know More</button>
+        </div>
+    </div>
+</body>
+</html>

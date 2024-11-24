@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-color: #dae4ed;
+  }
+
+  .navbar {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1045;
+    opacity: 85%;
+  }
+  .navbar a{
+    color: rgb(255, 255, 255);
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: #007bff;
+    left: 0;
+  }
+  .navbar-toggler {
+    border: none;
+    background-color: white;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D%27http%3A//www.w3.org/2000/svg%27 viewBox%3D%270 0 30 30%27%3E%3Cpath stroke%3D%27rgba%28155, 155, 155, 0.85%29%27 stroke-width%3D%272%27 stroke-linecap%3D%27round%27 stroke-miterlimit%3D%2710%27 d%3D%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar-brand img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar-brand h1 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+  }
+
+  .nav-link:hover {
+    background-color: black;
+    color: aliceblue;
+  }
+
+  @media (min-width: 992px) {
+    .navbar-collapse {
+      position: relative;
+      transform: none;
+      background-color: transparent;
+    }
+    .navbar-toggler {
+      display: none;
+    }
+  }
+  .about img {
+    box-shadow: 10px -3px 28px -3px rgba(0, 0, 0, 0.79);
+  }
+  .progress {
+    background-color: rgb(188, 197, 204);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+  }
+  .progress-bar1 {
+    animation: myanimation1 5s normal forwards;
+    background-color: black;
+    height: 25px;
+    width: 0;
+  }
+  .progress p {
+    color: aliceblue;
+    padding: 10px;
+  }
+  @keyframes myanimation1 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 95%;
+    }
+  }
+  .progress-bar2 {
+    animation: myanimation2 5s normal forwards;
+    background-color: black;
+    height: 25px;
+    width: 0;
+  }
+  .progress p {
+    color: aliceblue;
+    padding: 10px;
+  }
+  @keyframes myanimation2 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 98%;
+    }
+  }
+  .progress-bar3 {
+    animation: myanimation3 5s normal forwards;
+    background-color: black;
+    height: 25px;
+    width: 0;
+  }
+  .progress p {
+    color: aliceblue;
+    padding: 10px;
+  }
+  @keyframes myanimation3 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 75%;
+    }
+  }
+  .progress-bar4 {
+    animation: myanimation4 5s normal forwards;
+    background-color: black;
+    height: 25px;
+    width: 0;
+  }
+  .progress p {
+    color: aliceblue;
+    padding: 10px;
+  }
+  @keyframes myanimation4 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 85%;
+    }
+  }
+  .projects {
+background-color: #dae4ed;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+border: 2px solid black;
+border-radius: 10px; 
+padding: 20px; 
+margin: 20px;
+}
+
+.projects .row > div {
+display: flex;
+justify-content: center;
+align-items: center; 
+flex-grow: 1;
+animation: slideUp 3s ease-in-out;
+}
+
+@keyframes slideUp {
+0% {
+  transform: translateY(50px);
+  opacity: 0;
+}
+50%{
+  transform: translateY(25px);
+  opacity:0.5
+
+}
+100% {
+  transform: translateY(0);
+  opacity: 1;
+}
+}
+
+.projects img {
+width: 100%; 
+height: 250px; 
+object-fit: cover; 
+padding: 5px;
+transition: transform 0.5s ease, opacity 0.5s ease; 
+opacity: 0;
+transform: scale(0.8); 
+animation: fadeInScale 1s ease forwards;
+}
+
+.projects img:hover {
+transform: scale(1.05);
+}
+
+@keyframes fadeInScale {
+0% {
+  opacity: 0;
+  transform: scale(0.8);
+}
+100% {
+  opacity: 1;
+  transform: scale(1);
+}
+}
+.footer{
+background-color: #131415;
+}
+
+.logos {
+display: flex;
+justify-content: center; 
+align-items: center;
+gap: 30px; 
+margin-top: 20px; 
+}
+.logos a {
+color: white;
+text-decoration: none;
+margin: 0 10px; 
+}
+
+.logos a:hover {
+color: #00acee;
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primary School Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-bar {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .top-bar .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .top-bar .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .top-bar .logo span {
+      font-size: 14px;
+      line-height: 1.2;
+      color: #ddd;
+    }
+
+    .top-links a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .contact-btn {
+      background-color: #ffcc00;
+      color: black;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .navbar {
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    .navbar ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+    }
+
+    .social-media {
+  display: flex;
+  gap: 15px;
+}
+
+.social-media a {
+  background-color: #ffff;
+  border-radius: 50%; 
+  padding: 10px; 
+  display: inline-flex;
+  justify-content: center; 
+  align-items: center; 
+  transition: background-color 0.3s ease; 
+}
+
+.social-media a:hover {
+  background-color: #ffcc00; 
+}
+
+.social-media img {
+  width: 30px; 
+  height: 30px;
+  object-fit: cover;
+}
+    .hero {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 500px; 
+      object-fit: cover; 
+    }
+
+    .callout {
+      position: absolute;
+      top: 30%;
+      left: 28%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-left: 5px solid #ffcc00;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      color: #333;
+    }
+
+    .callout h1 {
+      font-size: 32px;
+      margin: 0;
+      color: #333;
+    }
+
+    .callout p {
+      margin: 5px 0 0;
+      font-size: 18px;
+      color: #555;
+    }
+
+    .bottom-section .container {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      background-color: #f4f4f4;
+      justify-content: space-between; 
+      flex-wrap: nowrap;
+    }
+
+
+    .feature1 {
+      flex: 1;
+      background-color: #f4f40b;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .feature {
+      flex: 1;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .feature img {
+      width: 50px;
+      height: 50px;
+     
+    }
+
+    .feature h2 {
+      font-size: 18px;
+      
+      color: #333;
+    }
+
+    .feature p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <img src="https://png.pngtree.com/png-vector/20220528/ourmid/pngtree-orange-yellow-line-abstract-wave-png-image_4744025.png" alt="Logo">
+        <span>Primary School<br>Internationally accredited</span>
+      </div>
+      <div class="top-links">
+        <a href="#">Our Calendar</a>
+        <a href="#">Ed Alumni</a>
+        <a href="#">Welcome to Ed</a>
+        <button class="contact-btn">Contact</button>
+      </div>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">School Life</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="social-media">
+        <a href="#"><img src="https://e7.pngegg.com/pngimages/708/311/png-clipart-twitter-twitter-thumbnail.png" alt="Twitter"></a>
+        <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/018/930/476/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFRdjR5BunvwHyATaeHUFqFKIENMz47EFHHA&s" alt="Google"></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUeK4YWjZ3vJvHFY7ev_rzC6g2ybDKCSV_dg&s" alt="Kids smiling">
+      <div class="callout">
+        <h1>Ideas are worth spreading</h1>
+        <p>Hannah, Ian & Leon, 7th grade</p>
+      </div>
+    </section>
+
+    <section class="bottom-section">
+      <div class="container">
+        <!-- Features in One Row -->
+        <div class="feature1">
+          <img src="https://i.pinimg.com/550x/7d/25/c3/7d25c375eb00e170d554eab5a0aad03d.jpg" alt="Practical School" width="50px" height="50px">
+          <h2>Practical School</h2>
+          <p>The ED Community School District is made up of five elementary schools, one middle.</p>
+        </div>
+        
+        <div class="feature">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJkrn85ZF8i6Y6Gv3OpBOe2RHcvB--gkhsSw&s" alt="Sensorial Activities">
+          <h2>Sensorial Activities</h2>
+          <p>From our outstanding music program to our pre-engineering program and everything in between.</p>
+        </div>
+
+        <div class="feature">
+          <img src="https://cdn2.iconfinder.com/data/icons/photography-line-vol-1/55/zoom__lens__maximize__in-512.png" alt="Language and Science">
+          <h2>Language, Science...</h2>
+          <p>Our schools offer excellent opportunities for students as they prepare for their future.</p>
+        </div>
+
+        <div class="feature">
+          <img src="https://thumbs.dreamstime.com/b/man-three-stars-outline-icon-man-three-stars-outline-icon-linear-style-sign-mobile-concept-web-design-person-120759286.jpg" alt="Three Stars">
+          <h2>Star Achievers</h2>
+          <p>We celebrate and recognize student achievements to inspire excellence in our schools.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
